@@ -70,7 +70,7 @@ def delete(root, word):
     return
 
 # if word exist: return True and its nodes, else: return False and prefix_nodes
-def look_up(root, word):
+def look_up(root, word: str) -> (bool, list):
     print('\n>> Looking up Word "{}"'.format(word))
     node = root
     prefix = ''
